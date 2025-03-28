@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Course Enrollment</title>
+<link rel="stylesheet" href="../css/enroll.css">
+</head>
+<body>
+	<div class="container">
+		<h2>Course Enrollment Form</h2>
+		<form id="enrollmentForm">
+			<h3>Basic Details</h3>
+			<label for="name">Full Name:</label> <input type="text" id="name"
+				required> <label for="email">Email Address:</label> <input
+				type="email" id="email" required> <label for="phone">Phone
+				Number:</label> <input type="tel" id="phone" required> <label
+				for="dob">Date of Birth:</label> <input type="date" id="dob"
+				required>
+
+			<h3>Educational Details</h3>
+			<label for="qualification">Highest Qualification:</label> <input
+				type="text" id="qualification" required> <label for="year">Year
+				of Passing:</label> <input type="number" id="year" required> <label
+				for="college">University/College Name:</label> <input type="text"
+				id="college" required> 
+				
+				<label for="category">Select
+				Category:</label> <select id="category">
+				<option value="">--Select--</option>
+				<option value="web">Web Development</option>
+				<option value="data">Data Science</option>
+				<option value="digital">Digital Marketing
+				</option>
+			</select> <br>
+			<br>
+
+			<div id="webDropdown" class="hidden">
+				<label for="webBatch">Web Development:</label> <select id="webBatch">
+					<option value="html">HTML</option>
+					<option value="css">CSS</option>
+					<option value="js">JavaScript</option>
+					<option value="javafs">Java Full Stack</option>
+				</select>
+			</div>
+
+			<div id="dataDropdown" class="hidden">
+				<label for="dataBatch">Data Science:</label> <select id="dataBatch">
+					<option value="ai">AI</option>
+					<option value="ml">Machine Learning</option>
+					<option value="python">Master Python</option>
+				</select>
+			</div>
+			
+			<div id="digiDropdown" class="hidden">
+				<label for="digiBatch">Digital Marketing:</label> <select id="digiBatch">
+					<option value="seo">SEO</option>
+					<option value="ads">ADS</option>
+					<option value="social_media">SOCIAL MEDIA</option>
+				</select>
+			</div>
+			
+			<br />
+			
+			<button type="submit">Enroll Now</button><br/>&nbsp;&nbsp;&nbsp;&nbsp;
+			<button type="button" onclick="goBack()">Back</button>
+		</form>
+			</div>
+		
+	    <script src="../javascript/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #1e3c72, #2a5298);
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    width: 40%;
+    max-width: 600px;
+    text-align: left;
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 25px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 12px;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin: 6px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    outline: none;
+    transition: 0.3s;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+input:focus, select:focus {
+    background: rgba(255, 255, 255, 0.5);
+    color: #000;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+
+button {
+    width: 48%;
+    padding: 16px;
+    background: #ff9800;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    background: #e68900;
+    transform: scale(1.07);
+    box-shadow: 0 5px 15px rgba(255, 152, 0, 0.4);
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 85%;
+        padding: 25px;
+    }
+    .button-group {
+        flex-direction: column;
+        gap: 10px;
+    }
+    button {
+        width: 100%;
+    }
+}
